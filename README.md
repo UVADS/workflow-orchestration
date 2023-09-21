@@ -21,6 +21,8 @@ Which is to say that you do not introduce a tight logic from one step to another
 If Process A runs and then forces its output directly to Process B, it is possible that
 Process B is still busy with another job, or that it has errors, or otherwise unavailable.
 
+![Tight vs. Loose Coupling](./images/loose-coupling.png)
+
 Loose coupling in the context of workflows is an approach that makes use of some external
 logic or orchestrator to know the state of all jobs within all workflows, and to help trigger
 or queue the flow of work throughout the pipeline. Loose coupling in the context above means that
