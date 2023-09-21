@@ -39,7 +39,19 @@ or (2) queues the job for Process B to pick up (a PULL model) when it is availab
 
 Let's consider three models for delivering a multi-step workflow on a compute system.
 
-1. **List- or loop-based workflows** - 
+1. **List- or loop-based workflows** - Developers are likely already quite familiar with driving
+a repetitive job off of a list of some type. This might be a local text file with a list of IDs,
+an API offering lists or items to be processed, or a database table.
+
+    The workflow fetches an ID to work with, and moves the file through each job in the
+    workflow, step by step. Once the file is completed, the workflow triggers the next
+    file to be processed.
+
+    An advantage of this model is simplicity and maintenance. It allows one primary script (or SLURM job, etc.)
+    to trigger multiple jobs, and for them all to share state within a single environment. (`env` variables,
+    for instance, can be written to / read from the instance hosting the workflow.
+
+    A disadvantage of this model is slow throughput, and the inability to run parallel work at the same time.
 
 2. **Workflow managers** - Many solutions to workflow/pipeline management have been created,
 of varying qualities and with specific verticals or audiences in mind. Generally they
