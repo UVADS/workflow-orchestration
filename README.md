@@ -2,6 +2,11 @@
 
 A library of approaches to running workflows and pipelines in a variety of environments.
 
+- [Workflows & Jobs](workflows--jobs)
+- [Loose Coupling](loose-coupling)
+- [Orchestration Models](orchestration-models)
+- [Considerations](#considerations)
+
 ## Workflows & Jobs
 
 Many data science projects involve running data through a multi-series workflow. Let's call
@@ -80,3 +85,14 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 3. **Event-driven microservices** - This solution tends to be more "cloud native," in that it is built with managed services in public cloud providers such as AWS, GCP, and Azure. Event-driven computing in AWS centers on either Lambda functions (triggered by one another using decoupled SQS queues, etc.) or Step Functions, which is a logical framework for executing Lambda functions and other software for more elaborate scenarios.
 
 ![AWS Step Functions](https://d1.awsstatic.com/step-functions-use-cases/use-case-diagram_AWS-Step-Functions_Video-on-demand-with-Elemental-Media-convert%402x.a4e26525bf649877d087c3b21a3f0ec3acedced9.png)
+
+## Considerations
+
+Several factors should be taken into consideration when designing a workflow solution. These include:
+
+- Complexity
+- Ease of deployment
+- Ease of management
+- Error/Exception Handling
+- Throughput / ability to run jobs in parallel
+- Platform requirements (GPUs, databases, etc.)
