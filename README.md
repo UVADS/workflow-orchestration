@@ -66,7 +66,7 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
       C. **maestrowf**, sponsored by the Lawrence Livermore NL, is Python-based, installable as a `pip` package, and configured using readable YAML files. [Read more](https://github.com/LLNL/maestrowf)
 
-    ![MaestroWF](https://www.researchgate.net/profile/Alberto-Silva-20/publication/363653761/figure/fig3/AS:11431281085024216@1663579627374/Maestro-workflow-BPMN-process-diagram.ppm)
+    ![MaestroWF](./images/maestro.png)
 
     A well-curated list of many other pipeline management tools is [available here](https://github.com/pditommaso/awesome-pipeline)
 
