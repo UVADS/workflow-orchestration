@@ -37,7 +37,7 @@ or (2) queues the job for Process B to pick up (a PULL model) when it is availab
 
 ## Orchestration Models
 
-Let's consider three models for delivering a multi-step workflow on a compute system.
+Let's consider three general models for delivering a multi-step workflow on a compute system.
 
 1. **List- or loop-based workflows** - Developers are likely already quite familiar with driving
 a repetitive job off of a list of some type. This might be a local text file with a list of IDs,
@@ -58,11 +58,13 @@ of varying qualities and with specific verticals or audiences in mind. Generally
 help the developer define, author, manage, and maintain workflows of varying complexity,
 with varying levels of logic (if-then conditionals, error handling, etc.)
 
-    Two noteworthy solutions are:
+    Three noteworthy solutions are:
 
       A. **Apache Airflow**, first authored by AirBnb and open-sourced in 2016, is written in Python and can handle a variety of tasks, logic, and complexity. [Read more](https://airflow.apache.org/)
 
       B. **Cromwell**, created by the Broad Institute, is a "scientific workflow engine designed for simplicity and scalability." Cromwell enables jobs to be run on a variety of platforms (on-premise, cloud, HPC, etc.) within the same workflow. [Read more](https://github.com/broadinstitute/cromwell)
+
+      C. **maestrowf**, sponsored by the Lawrence Livermore NL, is Python-based, installable as a `pip` package, and configured using readable YAML files. [Read more](https://github.com/LLNL/maestrowf)
 
     A well-curated list of many other pipeline management tools is [available here](https://github.com/pditommaso/awesome-pipeline)
 
