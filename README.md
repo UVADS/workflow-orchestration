@@ -68,5 +68,6 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
     A well-curated list of many other pipeline management tools is [available here](https://github.com/pditommaso/awesome-pipeline)
 
-3. **Event-driven microservices** - 
+3. **Event-driven microservices** - This solution tends to be more "cloud native," in that it is built with managed services in public cloud providers such as AWS, GCP, and Azure. Event-driven computing in AWS centers on either Lambda functions (triggered by one another using decoupled SQS queues, etc.) or Step Functions, which is a logical framework for executing Lambda functions and other software for more elaborate scenarios.
 
+![AWS Step Functions](https://d1.awsstatic.com/step-functions-use-cases/use-case-diagram_AWS-Step-Functions_Video-on-demand-with-Elemental-Media-convert%402x.a4e26525bf649877d087c3b21a3f0ec3acedced9.png)
