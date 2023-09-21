@@ -39,7 +39,8 @@ or (2) queues the job for Process B to pick up (a PULL model) when it is availab
 
 Let's consider three general models for delivering a multi-step workflow on a compute system.
 
-<img align="right" style="width:50%" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/For_loop_example.svg">
+<img align="right" style="width:25%" 
+src="https://upload.wikimedia.org/wikipedia/commons/d/d1/For_loop_example.svg">
 
 1. **List- or loop-based workflows** - Developers are likely already quite familiar with driving
 a repetitive job off of a list of some type. This might be a local text file with a list of IDs,
