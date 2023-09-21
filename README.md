@@ -1,6 +1,6 @@
 # Workflow Orchestration
 
-A library of approaches to running workflows and pipelines in a variety of environments.
+A review of approaches to workflow and pipeline management for data science.
 
 - [Workflows & Jobs](#workflows--jobs)
 - [Loose Coupling](#loose-coupling)
