@@ -2,9 +2,9 @@
 
 A library of approaches to running workflows and pipelines in a variety of environments.
 
-- [Workflows & Jobs](workflows--jobs)
-- [Loose Coupling](loose-coupling)
-- [Orchestration Models](orchestration-models)
+- [Workflows & Jobs](#workflows--jobs)
+- [Loose Coupling](#loose-coupling)
+- [Orchestration Models](#orchestration-models)
 - [Considerations](#considerations)
 
 ## Workflows & Jobs
