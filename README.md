@@ -66,6 +66,8 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
       C. **maestrowf**, sponsored by the Lawrence Livermore NL, is Python-based, installable as a `pip` package, and configured using readable YAML files. [Read more](https://github.com/LLNL/maestrowf)
 
+    ![MaestroWF](https://www.researchgate.net/profile/Alberto-Silva-20/publication/363653761/figure/fig3/AS:11431281085024216@1663579627374/Maestro-workflow-BPMN-process-diagram.ppm)
+
     A well-curated list of many other pipeline management tools is [available here](https://github.com/pditommaso/awesome-pipeline)
 
 3. **Event-driven microservices** - This solution tends to be more "cloud native," in that it is built with managed services in public cloud providers such as AWS, GCP, and Azure. Event-driven computing in AWS centers on either Lambda functions (triggered by one another using decoupled SQS queues, etc.) or Step Functions, which is a logical framework for executing Lambda functions and other software for more elaborate scenarios.
