@@ -55,6 +55,14 @@ an API offering lists or items to be processed, or a database table.
     workflow, step by step. Once the file is completed, the workflow triggers the next
     file to be processed.
 
+    ```bash
+    0102AH29
+    0914BG32
+    0872GC11
+    0174EF79
+    . . .
+    ```
+
     An advantage of this model is simplicity and maintenance. It allows one primary script (or SLURM job, etc.)
     to trigger multiple jobs, and for them all to share state within a single environment. (`env` variables,
     for instance, can be written to / read from the instance hosting the workflow.
