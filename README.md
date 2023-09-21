@@ -43,6 +43,8 @@ Let's consider three general models for delivering a multi-step workflow on a co
 a repetitive job off of a list of some type. This might be a local text file with a list of IDs,
 an API offering lists or items to be processed, or a database table.
 
+![For-Loop](https://upload.wikimedia.org/wikipedia/commons/d/d1/For_loop_example.svg)
+
     The workflow fetches an ID to work with, and moves the file through each job in the
     workflow, step by step. Once the file is completed, the workflow triggers the next
     file to be processed.
