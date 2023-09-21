@@ -56,11 +56,11 @@ an API offering lists or items to be processed, or a database table.
     file to be processed.
 
     ```bash
-    0102AH29
-    0914BG32
-    0872GC11
-    0174EF79
-    . . .
+    > 0102AH29
+      0914BG32
+      0872GC11
+      0174EF79
+      . . .
     ```
 
     An advantage of this model is simplicity and maintenance. It allows one primary script (or SLURM job, etc.)
