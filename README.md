@@ -116,7 +116,7 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
 3. **Event-driven microservices** - This solution tends to be more "cloud native," in that it is built with managed services in public cloud providers such as AWS, GCP, and Azure. Event-driven computing in AWS centers on either Lambda functions (triggered by one another using decoupled SQS queues, etc.) or Step Functions, which is a logical framework for executing Lambda functions and other software for more elaborate scenarios.
 
-![AWS Step Functions](https://d1.awsstatic.com/step-functions-use-cases/use-case-diagram_AWS-Step-Functions_Video-on-demand-with-Elemental-Media-convert%402x.a4e26525bf649877d087c3b21a3f0ec3acedced9.png)
+    ![AWS Step Functions](https://d1.awsstatic.com/step-functions-use-cases/use-case-diagram_AWS-Step-Functions_Video-on-demand-with-Elemental-Media-convert%402x.a4e26525bf649877d087c3b21a3f0ec3acedced9.png)
 
     Alternatively, this solution could be built by containerizing the job steps and deploying into a container orchestrator such as Kubernetes. However, while this provides an environment in which to host the containers, the developer still needs a workflow/pipeline manager of some sort to queue any data or file processing to occur, moving each data blob through the pipeline.
 
