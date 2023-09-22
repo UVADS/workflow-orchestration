@@ -21,12 +21,23 @@ tasks specific to a logical step of the entire workflow. Here are some examples 
 - . . .
 
 Jobs can be standalone scripts, containerized processes with all dependencies bundled, they
-can be HPC (SLURM) or Kubernetes jobs, or compiled executables. The best approach to an
-effective workflow is that each step is independent of the others, can be debugged or scaled
-independently from other jobs, and that the developer preserve "loose coupling" between them.
-Which is to say that you do not introduce a tight logic from one step to another.
+can be HPC (SLURM) or Kubernetes jobs, or compiled executables. 
+
+Most jobs require input of some kind, parameters or options configured for their operation, and 
+some details for what to output, and where that should go.
+
+- Input file name / path
+- Keys / Tokens / Certificates
+- Input parameters (`env` vars, configuration files, etc.)
+- Output parameters (path, output format, etc.)
+- Runtime constraints
 
 ## Loose Coupling
+
+The best approach to an effective workflow is that each step is independent of the others, can 
+be debugged or scaled independently from other jobs, and that the developer preserve "loose 
+coupling" between them. Which is to say that you do not introduce a tight logic from one step 
+to another.
 
 If Process A runs and then forces its output directly to Process B, it is possible that
 Process B is still busy with another job, or that it has errors, or otherwise unavailable.
