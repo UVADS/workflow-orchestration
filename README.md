@@ -118,10 +118,7 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
 ![AWS Step Functions](https://d1.awsstatic.com/step-functions-use-cases/use-case-diagram_AWS-Step-Functions_Video-on-demand-with-Elemental-Media-convert%402x.a4e26525bf649877d087c3b21a3f0ec3acedced9.png)
 
-Alternatively, this solution could be built by containerizing the job steps and deploying into 
-a container orchestrator such as Kubernetes. However, while this provides an environment in 
-which to host the containers, the developer still needs a workflow/pipeline manager of some 
-sort to queue any data or file processing to occur, moving each data blob through the pipeline.
+    Alternatively, this solution could be built by containerizing the job steps and deploying into a container orchestrator such as Kubernetes. However, while this provides an environment in which to host the containers, the developer still needs a workflow/pipeline manager of some sort to queue any data or file processing to occur, moving each data blob through the pipeline.
 
 ## Considerations
 
