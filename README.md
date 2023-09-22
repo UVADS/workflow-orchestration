@@ -96,10 +96,7 @@ of varying qualities and with specific verticals or audiences in mind. Generally
 help the developer define, author, manage, and maintain workflows of varying complexity,
 with varying levels of logic (if-then conditionals, error handling, etc.)
 
-Note that a robust workflow manager should be able to take advantage of a breadth of compute 
-platforms and options: bare metal servers, containers, cloud services, HPC jobs, Kubernetes 
-jobs, and so forth. A weak solution would require ALL jobs (i.e. all steps of a workflow) to 
-match in form.
+    Note that a robust workflow manager should be able to take advantage of a breadth of compute platforms and options: bare metal servers, containers, cloud services, HPC jobs, Kubernetes jobs, and so forth. A weak solution would require ALL jobs (i.e. all steps of a workflow) to match in form.
 
     Three noteworthy solutions are:
 
