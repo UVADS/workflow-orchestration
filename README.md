@@ -89,7 +89,7 @@ an API offering lists or items to be processed, or a database table.
     to trigger multiple jobs, and for them all to share state within a single environment. (`env` variables,
     for instance, can be written to / read from the instance hosting the workflow.
 
-    A disadvantage of this model is slow throughput, and the inability to run parallel work at the same time.
+    A disadvantage of this model is slow throughput, and the inability to run parallel work at the same time unless the loop is submitting a swarm of requests to a job scheduler (SLURM, Kubernetes).
 
 2. **Workflow managers** - Many solutions to workflow/pipeline management have been created,
 of varying qualities and with specific verticals or audiences in mind. Generally they
