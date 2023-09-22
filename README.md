@@ -34,10 +34,10 @@ some details for what to output, and where that should go.
 
 ## Loose Coupling
 
-The best approach to an effective workflow is that each step is independent of the others, can 
-be debugged or scaled independently from other jobs, and that the developer preserve "loose 
-coupling" between them. Which is to say that you do not introduce a tight logic from one step 
-to another.
+The best approach to an effective workflow is to ensure that each step is independent of the 
+others, can be debugged or scaled independently from other jobs, and that the developer preserve "loose 
+coupling" between them. Which is to say that you should always avoid introducing any tight 
+logic from one step to another.
 
 If Process A runs and then forces its output directly to Process B, it is possible that
 Process B is still busy with another job, or that it has errors, or otherwise unavailable.
