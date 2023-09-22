@@ -124,9 +124,9 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
 Several factors should be taken into consideration when designing a workflow solution. These include:
 
-- Complexity
-- Ease of deployment
-- Ease of management
-- Error/Exception Handling
-- Throughput / ability to run jobs in parallel
-- Platform requirements (GPUs, databases, etc.)
+- **Complexity** - Does the solution offer enough complexity and options for your work? Too many?
+- **Ease of deployment** - How challenging is the deploymet of the solution, and what is required to launch and run it?
+- **Ease of management** - How much time and what skills are required to maintain and manage the solution?
+- **Error/Exception Handling** - How does the solution handle errors, and does it provide options to roll-back or repeat failed jobs?
+- **Throughput / ability to run jobs in parallel** - Does the solution provide ample throughput and the ability to process many things at once, or is it more limited?
+- **Platform requirements** (GPUs, databases, etc.) - Does the solution require special services or ancillary platforms in order to run?
