@@ -122,7 +122,8 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
 ## Considerations
 
-Several factors should be taken into consideration when designing a workflow solution. These include:
+Several factors should be taken into consideration when selecting or designing a workflow 
+solution. These include:
 
 - **Complexity** - Does the solution offer enough complexity and options for your work? Too many?
 - **Ease of deployment** - How challenging is the deploymet of the solution, and what is required to launch and run it?
