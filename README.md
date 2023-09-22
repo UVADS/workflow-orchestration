@@ -75,6 +75,16 @@ an API offering lists or items to be processed, or a database table.
       # . . .
     ```
 
+    ```python
+    # Or loop through only the first N lines of a file
+
+    for id in (idlist[:N]):
+      # do something
+      # - run job
+      # - submit slurm script
+      # . . .    
+    ```
+
     An advantage of this model is simplicity and maintenance. It allows one primary script (or SLURM job, etc.)
     to trigger multiple jobs, and for them all to share state within a single environment. (`env` variables,
     for instance, can be written to / read from the instance hosting the workflow.
