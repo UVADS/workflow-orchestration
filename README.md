@@ -63,6 +63,18 @@ an API offering lists or items to be processed, or a database table.
       . . .
     ```
 
+    ```python
+    import os
+    
+    idlist = open("id-file.txt", "r")
+
+    for id in idlist:
+      # do something
+      # - run job
+      # - subit slurm script
+      # . . .
+    ```
+
     An advantage of this model is simplicity and maintenance. It allows one primary script (or SLURM job, etc.)
     to trigger multiple jobs, and for them all to share state within a single environment. (`env` variables,
     for instance, can be written to / read from the instance hosting the workflow.
@@ -73,6 +85,11 @@ an API offering lists or items to be processed, or a database table.
 of varying qualities and with specific verticals or audiences in mind. Generally they
 help the developer define, author, manage, and maintain workflows of varying complexity,
 with varying levels of logic (if-then conditionals, error handling, etc.)
+
+Note that a robust workflow manager should be able to take advantage of a breadth of compute 
+platforms and options: bare metal servers, containers, cloud services, HPC jobs, Kubernetes 
+jobs, and so forth. A weak solution would require ALL jobs (i.e. all steps of a workflow) to 
+match in form.
 
     Three noteworthy solutions are:
 
@@ -93,6 +110,11 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 3. **Event-driven microservices** - This solution tends to be more "cloud native," in that it is built with managed services in public cloud providers such as AWS, GCP, and Azure. Event-driven computing in AWS centers on either Lambda functions (triggered by one another using decoupled SQS queues, etc.) or Step Functions, which is a logical framework for executing Lambda functions and other software for more elaborate scenarios.
 
 ![AWS Step Functions](https://d1.awsstatic.com/step-functions-use-cases/use-case-diagram_AWS-Step-Functions_Video-on-demand-with-Elemental-Media-convert%402x.a4e26525bf649877d087c3b21a3f0ec3acedced9.png)
+
+Alternatively, this solution could be built by containerizing the job steps and deploying into 
+a container orchestrator such as Kubernetes. However, while this provides an environment in 
+which to host the containers, the developer still needs a workflow/pipeline manager of some 
+sort to queue any data or file processing to occur, moving each data blob through the pipeline.
 
 ## Considerations
 
