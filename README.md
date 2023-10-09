@@ -113,7 +113,7 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
       A. **Luigi**, created by Spotify, is a Python-based manager for coordinating tasks within longer running workflows. It "handles dependency resolution, workflow management, visualization, handling failures, command-line integration, and much more. [Read more](https://luigi.readthedocs.io/en/stable/)
 
-    ![Spotify Luigi](./images/luigi-user-recs.png))
+    ![Spotify Luigi](./images/luigi-user-recs.png)
 
       B. **Apache Airflow**, first authored by AirBnb and open-sourced in 2016, is written in Python and can handle a variety of tasks, logic, and complexity. [Read more](https://airflow.apache.org/)
 
