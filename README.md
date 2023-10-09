@@ -109,7 +109,9 @@ with varying levels of logic (if-then conditionals, error handling, etc.)
 
     Note that a robust workflow manager should be able to take advantage of a breadth of compute platforms and options: bare metal servers, containers, cloud services, HPC jobs, Kubernetes jobs, and so forth. A weak solution would require ALL jobs (i.e. all steps of a workflow) to match in form.
 
-    Three noteworthy solutions are:
+    Some noteworthy solutions are:
+
+      A. **Luigi**, created by Spotify, is a Python-based manager for coordinating tasks within longer running workflows. It "handles dependency resolution, workflow management, visualization, handling failures, command-line integration, and much more. [Read more](https://luigi.readthedocs.io/en/stable/)
 
       A. **Apache Airflow**, first authored by AirBnb and open-sourced in 2016, is written in Python and can handle a variety of tasks, logic, and complexity. [Read more](https://airflow.apache.org/)
 
